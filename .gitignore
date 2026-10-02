@@ -1,0 +1,36 @@
+# Private source data: never commit the raw workbook or derived row-level outputs
+*.xlsm
+*.xlsx
+*.xls
+data/private/
+tools/source-profile/out/
+
+# Local toolchain / runtimes (portable JDK, Python venv, local PostgreSQL cluster)
+.tools/
+.runtime/
+.backups/
+
+# Backend
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+*.log
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/coverage/
+frontend/test-results/
+frontend/playwright-report/
+frontend/blob-report/
+
+# Env / secrets
+.env
+*.env.local
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

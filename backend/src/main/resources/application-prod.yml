@@ -1,0 +1,17 @@
+# Production-like profile: Secure cookie required (HTTPS terminated in front of the app), structured JSON logs,
+# no demo seed unless explicitly requested.
+server:
+  servlet:
+    session:
+      cookie:
+        secure: true
+  forward-headers-strategy: native
+
+logging:
+  structured:
+    format:
+      console: logstash
+
+stockflow:
+  demo:
+    seed: ${STOCKFLOW_DEMO_SEED:false}

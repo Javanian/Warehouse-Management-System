@@ -1,0 +1,15 @@
+# Local profile: loopback HTTP only, therefore Secure cookie disabled (ADR-0003). Demo seed enabled.
+server:
+  servlet:
+    session:
+      cookie:
+        secure: ${COOKIE_SECURE:false}
+
+stockflow:
+  demo:
+    seed: ${STOCKFLOW_DEMO_SEED:true}
+
+logging:
+  structured:
+    format:
+      file: logstash
