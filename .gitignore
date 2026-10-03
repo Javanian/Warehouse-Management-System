@@ -34,3 +34,17 @@ frontend/blob-report/
 *.iml
 .DS_Store
 Thumbs.db
+
+# Public repository: keep README files and application source
+*.md
+*.MD
+*.markdown
+!README.md
+!readme.md
+.claude/
+.codex/
+.opencode/
+.cursor/
+.obsidian/
+.mcp.json
+opencode.json
