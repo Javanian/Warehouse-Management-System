@@ -1,0 +1,5 @@
+# StockFlow Document Extraction Spike Dependencies
+pillow>=10.0.0
+pytesseract>=0.3.10
+pypdfium2>=5.0.0
+reportlab>=4.0.0

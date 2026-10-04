@@ -9,6 +9,10 @@ tools/source-profile/out/
 .tools/
 .runtime/
 .backups/
+.venv/
+__pycache__/
+*.py[cod]
+backend/src/main/resources/static/
 
 # Backend
 backend/target/

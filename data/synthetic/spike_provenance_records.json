@@ -1,0 +1,4294 @@
+{
+  "SYN-DOC-FAM-01-clean": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-01-clean",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-01-clean.png",
+    "latency_ms": 1267.55,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-001",
+        "normalized": "SYN-PO-2026-001",
+        "confidence": 0.24,
+        "provenance": [
+          821,
+          288,
+          952,
+          300
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-001",
+        "normalized": "SJ-2026-001",
+        "confidence": 0.39,
+        "provenance": [
+          231,
+          288,
+          319,
+          300
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.72,
+        "provenance": [
+          230,
+          323,
+          311,
+          335
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-01",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-001",
+          "normalized": "SYN-MAT-001",
+          "confidence": 0.88,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "quantity": {
+          "raw": "001",
+          "normalized": 1.0,
+          "confidence": 0.836,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.836,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-001 Hexagonal Bolt M12 x 50mm Gr 8.8",
+          "confidence": 0.88
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-01-skewed": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-01-skewed",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-01-skewed.png",
+    "latency_ms": 1268.99,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO.2026-001",
+        "normalized": "SYN-PO-2026-001",
+        "confidence": 0.81,
+        "provenance": [
+          849,
+          299,
+          981,
+          317
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-001",
+        "normalized": "SJ-2026-001",
+        "confidence": 0.4,
+        "provenance": [
+          259,
+          266,
+          348,
+          292
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          258,
+          305,
+          338,
+          321
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-01",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-001",
+          "normalized": "SYN-MAT-001",
+          "confidence": 0.91,
+          "provenance": [
+            162,
+            413,
+            265,
+            440
+          ]
+        },
+        "quantity": {
+          "raw": "100",
+          "normalized": 100.0,
+          "confidence": 0.864,
+          "provenance": [
+            162,
+            413,
+            265,
+            440
+          ]
+        },
+        "uom": {
+          "raw": "PC",
+          "normalized": "PC",
+          "confidence": 0.864,
+          "provenance": [
+            162,
+            413,
+            265,
+            440
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-001 Hexagonal Bolt M12 x 50mm Gr 8.8 100 PC",
+          "confidence": 0.91
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-01-degraded": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-01-degraded",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-01-degraded.png",
+    "latency_ms": 1189.89,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO.2026-001",
+        "normalized": "SYN-PO-2026-001",
+        "confidence": 0.17,
+        "provenance": [
+          821,
+          287,
+          953,
+          301
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-001",
+        "normalized": "SJ-2026-001",
+        "confidence": 0.09,
+        "provenance": [
+          231,
+          287,
+          320,
+          301
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.79,
+        "provenance": [
+          230,
+          322,
+          312,
+          336
+        ]
+      },
+      "supplier": {
+        "raw": "PT Sinar Presisi Logam",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-001",
+          "normalized": "SYN-MAT-001",
+          "confidence": 0.45,
+          "provenance": [
+            136,
+            435,
+            247,
+            462
+          ]
+        },
+        "quantity": {
+          "raw": "100",
+          "normalized": 100.0,
+          "confidence": 0.427,
+          "provenance": [
+            136,
+            435,
+            247,
+            462
+          ]
+        },
+        "uom": {
+          "raw": "PC",
+          "normalized": "PC",
+          "confidence": 0.427,
+          "provenance": [
+            136,
+            435,
+            247,
+            462
+          ]
+        },
+        "description": {
+          "raw": "1 \u2018SYN-MAT-001 Hexagonal Bolt M12 x 50mm Gr 8.8 100 PC",
+          "confidence": 0.45
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-01-annotated": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-01-annotated",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-01-annotated.png",
+    "latency_ms": 1289.61,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-001",
+        "normalized": "SYN-PO-2026-001",
+        "confidence": 0.24,
+        "provenance": [
+          821,
+          288,
+          952,
+          300
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-001",
+        "normalized": "SJ-2026-001",
+        "confidence": 0.39,
+        "provenance": [
+          231,
+          288,
+          319,
+          300
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.72,
+        "provenance": [
+          230,
+          323,
+          311,
+          335
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-01",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-001",
+          "normalized": "SYN-MAT-001",
+          "confidence": 0.88,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "quantity": {
+          "raw": "001",
+          "normalized": 1.0,
+          "confidence": 0.836,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.836,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-001 Hexagonal Bolt M12 x 50mm Gr 8.8",
+          "confidence": 0.88
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-02-clean": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-02-clean",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-02-clean.png",
+    "latency_ms": 1156.76,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-002",
+        "normalized": "SYN-PO-2026-002",
+        "confidence": 0.89,
+        "provenance": [
+          828,
+          173,
+          961,
+          185
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-002",
+        "normalized": "SJ-2026-002",
+        "confidence": 0.91,
+        "provenance": [
+          940,
+          113,
+          1031,
+          125
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          832,
+          143,
+          913,
+          155
+        ]
+      },
+      "supplier": {
+        "raw": "PT Delta Mandiri Teknik",
+        "normalized": "SYN-SUP-02",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-002",
+          "normalized": "SYN-MAT-002",
+          "confidence": 0.9,
+          "provenance": [
+            141,
+            270,
+            245,
+            302
+          ]
+        },
+        "quantity": {
+          "raw": "40",
+          "normalized": 40.0,
+          "confidence": 0.855,
+          "provenance": [
+            141,
+            270,
+            245,
+            302
+          ]
+        },
+        "uom": {
+          "raw": "PC",
+          "normalized": "PC",
+          "confidence": 0.855,
+          "provenance": [
+            141,
+            270,
+            245,
+            302
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-002 Spiral Wound Gasket 2 inch 150 ANSI 40 PC",
+          "confidence": 0.9
+        }
+      },
+      {
+        "line_no": 2,
+        "material_code": {
+          "raw": "SYN-MAT-004",
+          "normalized": "SYN-MAT-004",
+          "confidence": 0.72,
+          "provenance": [
+            141,
+            325,
+            246,
+            337
+          ]
+        },
+        "quantity": {
+          "raw": "30",
+          "normalized": 30.0,
+          "confidence": 0.684,
+          "provenance": [
+            141,
+            325,
+            246,
+            337
+          ]
+        },
+        "uom": {
+          "raw": "PC",
+          "normalized": "PC",
+          "confidence": 0.684,
+          "provenance": [
+            141,
+            325,
+            246,
+            337
+          ]
+        },
+        "description": {
+          "raw": "2. SYN-MAT-004 Deep Groove Ball Bearing 6205-2RS 30 PC",
+          "confidence": 0.72
+        }
+      },
+      {
+        "line_no": 3,
+        "material_code": {
+          "raw": "SYN-MAT-009",
+          "normalized": "SYN-MAT-009",
+          "confidence": 0.65,
+          "provenance": [
+            141,
+            370,
+            245,
+            382
+          ]
+        },
+        "quantity": {
+          "raw": "20",
+          "normalized": 20.0,
+          "confidence": 0.617,
+          "provenance": [
+            141,
+            370,
+            245,
+            382
+          ]
+        },
+        "uom": {
+          "raw": "SET",
+          "normalized": "SET",
+          "confidence": 0.617,
+          "provenance": [
+            141,
+            370,
+            245,
+            382
+          ]
+        },
+        "description": {
+          "raw": "3. SYN-MAT-009 Mechanical Seal Type 21 Shaft 35mm 20 SET",
+          "confidence": 0.65
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-02-skewed": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-02-skewed",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-02-skewed.png",
+    "latency_ms": 1319.66,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-002",
+        "normalized": "SYN-PO-2026-002",
+        "confidence": 0.67,
+        "provenance": [
+          866,
+          186,
+          1000,
+          205
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-002",
+        "normalized": "SJ-2026-002",
+        "confidence": 0.4,
+        "provenance": [
+          981,
+          132,
+          1073,
+          149
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.89,
+        "provenance": [
+          876,
+          156,
+          954,
+          173
+        ]
+      },
+      "supplier": {
+        "raw": "PT Delta Mandiri Teknik",
+        "normalized": "SYN-SUP-02",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-004",
+          "normalized": "SYN-MAT-004",
+          "confidence": 0.83,
+          "provenance": [
+            172,
+            295,
+            277,
+            323
+          ]
+        },
+        "quantity": {
+          "raw": "30",
+          "normalized": 30.0,
+          "confidence": 0.788,
+          "provenance": [
+            172,
+            295,
+            277,
+            323
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.788,
+          "provenance": [
+            172,
+            295,
+            277,
+            323
+          ]
+        },
+        "description": {
+          "raw": "| 2 SYN-MAT-004 Deep Groove Ball Bearing 6205-2RS 30",
+          "confidence": 0.83
+        }
+      },
+      {
+        "line_no": 2,
+        "material_code": {
+          "raw": "SYN-MAT-009",
+          "normalized": "SYN-MAT-009",
+          "confidence": 0.63,
+          "provenance": [
+            169,
+            340,
+            274,
+            368
+          ]
+        },
+        "quantity": {
+          "raw": "20",
+          "normalized": 20.0,
+          "confidence": 0.598,
+          "provenance": [
+            169,
+            340,
+            274,
+            368
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.598,
+          "provenance": [
+            169,
+            340,
+            274,
+            368
+          ]
+        },
+        "description": {
+          "raw": "| 3 SYN-MAT-009 Mechanical Seal Type 21 Shaft 35mm 20",
+          "confidence": 0.63
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-02-degraded": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-02-degraded",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-02-degraded.png",
+    "latency_ms": 1120.8,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-002",
+        "normalized": "SYN-PO-2026-002",
+        "confidence": 0.91,
+        "provenance": [
+          827,
+          172,
+          962,
+          186
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-002",
+        "normalized": "SJ-2026-002",
+        "confidence": 0.5,
+        "provenance": [
+          939,
+          112,
+          1032,
+          126
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          832,
+          142,
+          914,
+          156
+        ]
+      },
+      "supplier": {
+        "raw": "PT Delta Mandiri Teknik",
+        "normalized": "SYN-SUP-02",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-002",
+          "normalized": "SYN-MAT-002",
+          "confidence": 0.16,
+          "provenance": [
+            136,
+            274,
+            251,
+            302
+          ]
+        },
+        "quantity": {
+          "raw": "002",
+          "normalized": 2.0,
+          "confidence": 0.152,
+          "provenance": [
+            136,
+            274,
+            251,
+            302
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.152,
+          "provenance": [
+            136,
+            274,
+            251,
+            302
+          ]
+        },
+        "description": {
+          "raw": "1 \u2018SYN-MAT-002 Spiral Wound Gasket 2 inch 150 ANS!",
+          "confidence": 0.16
+        }
+      },
+      {
+        "line_no": 2,
+        "material_code": {
+          "raw": "SYN-MAT-009",
+          "normalized": "SYN-MAT-009",
+          "confidence": 0.21,
+          "provenance": [
+            136,
+            365,
+            251,
+            393
+          ]
+        },
+        "quantity": {
+          "raw": "009",
+          "normalized": 9.0,
+          "confidence": 0.199,
+          "provenance": [
+            136,
+            365,
+            251,
+            393
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.199,
+          "provenance": [
+            136,
+            365,
+            251,
+            393
+          ]
+        },
+        "description": {
+          "raw": "3 \u2018SYN-MAT-009 Mechanical Seal Type 21 Shaft 35mm",
+          "confidence": 0.21
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-02-annotated": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-02-annotated",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-02-annotated.png",
+    "latency_ms": 1218.17,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-002",
+        "normalized": "SYN-PO-2026-002",
+        "confidence": 0.91,
+        "provenance": [
+          828,
+          173,
+          961,
+          185
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-002",
+        "normalized": "SJ-2026-002",
+        "confidence": 0.69,
+        "provenance": [
+          940,
+          113,
+          1031,
+          125
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.94,
+        "provenance": [
+          832,
+          143,
+          913,
+          155
+        ]
+      },
+      "supplier": {
+        "raw": "PT Delta Mandiri Teknik",
+        "normalized": "SYN-SUP-02",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-002",
+          "normalized": "SYN-MAT-002",
+          "confidence": 0.9,
+          "provenance": [
+            141,
+            270,
+            245,
+            302
+          ]
+        },
+        "quantity": {
+          "raw": "40",
+          "normalized": 40.0,
+          "confidence": 0.855,
+          "provenance": [
+            141,
+            270,
+            245,
+            302
+          ]
+        },
+        "uom": {
+          "raw": "PC",
+          "normalized": "PC",
+          "confidence": 0.855,
+          "provenance": [
+            141,
+            270,
+            245,
+            302
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-002 Spiral Wound Gasket 2 inch 150 ANSI 40 PC",
+          "confidence": 0.9
+        }
+      },
+      {
+        "line_no": 2,
+        "material_code": {
+          "raw": "SYN-MAT-004",
+          "normalized": "SYN-MAT-004",
+          "confidence": 0.72,
+          "provenance": [
+            141,
+            325,
+            246,
+            337
+          ]
+        },
+        "quantity": {
+          "raw": "30",
+          "normalized": 30.0,
+          "confidence": 0.684,
+          "provenance": [
+            141,
+            325,
+            246,
+            337
+          ]
+        },
+        "uom": {
+          "raw": "PC",
+          "normalized": "PC",
+          "confidence": 0.684,
+          "provenance": [
+            141,
+            325,
+            246,
+            337
+          ]
+        },
+        "description": {
+          "raw": "2. SYN-MAT-004 Deep Groove Ball Bearing 6205-2RS 30 PC",
+          "confidence": 0.72
+        }
+      },
+      {
+        "line_no": 3,
+        "material_code": {
+          "raw": "SYN-MAT-009",
+          "normalized": "SYN-MAT-009",
+          "confidence": 0.65,
+          "provenance": [
+            141,
+            370,
+            245,
+            382
+          ]
+        },
+        "quantity": {
+          "raw": "20",
+          "normalized": 20.0,
+          "confidence": 0.617,
+          "provenance": [
+            141,
+            370,
+            245,
+            382
+          ]
+        },
+        "uom": {
+          "raw": "SET",
+          "normalized": "SET",
+          "confidence": 0.617,
+          "provenance": [
+            141,
+            370,
+            245,
+            382
+          ]
+        },
+        "description": {
+          "raw": "3. SYN-MAT-009 Mechanical Seal Type 21 Shaft 35mm 20 SET",
+          "confidence": 0.65
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-03-clean": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-03-clean",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-03-clean.png",
+    "latency_ms": 1238.9,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-003",
+        "normalized": "SYN-PO-2026-003",
+        "confidence": 0.36,
+        "provenance": [
+          821,
+          288,
+          954,
+          300
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-003",
+        "normalized": "SJ-2026-003",
+        "confidence": 0.58,
+        "provenance": [
+          231,
+          288,
+          321,
+          300
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.72,
+        "provenance": [
+          230,
+          323,
+          311,
+          335
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-01",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-005",
+          "normalized": "SYN-MAT-005",
+          "confidence": 0.92,
+          "provenance": [
+            141,
+            436,
+            246,
+            460
+          ]
+        },
+        "quantity": {
+          "raw": "400",
+          "normalized": 400.0,
+          "confidence": 0.874,
+          "provenance": [
+            141,
+            436,
+            246,
+            460
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.874,
+          "provenance": [
+            141,
+            436,
+            246,
+            460
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-005 Nylon Conveyor Belt 650mm EP-400 3-Ply",
+          "confidence": 0.92
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-03-skewed": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-03-skewed",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-03-skewed.png",
+    "latency_ms": 1302.36,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO.2026-003",
+        "normalized": "SYN-PO-2026-003",
+        "confidence": 0.87,
+        "provenance": [
+          849,
+          299,
+          982,
+          317
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-003",
+        "normalized": "SJ-2026-003",
+        "confidence": 0.45,
+        "provenance": [
+          259,
+          266,
+          350,
+          293
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          258,
+          305,
+          338,
+          321
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-01",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-005",
+          "normalized": "SYN-MAT-005",
+          "confidence": 0.89,
+          "provenance": [
+            162,
+            413,
+            267,
+            440
+          ]
+        },
+        "quantity": {
+          "raw": "005",
+          "normalized": 5.0,
+          "confidence": 0.845,
+          "provenance": [
+            162,
+            413,
+            267,
+            440
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.845,
+          "provenance": [
+            162,
+            413,
+            267,
+            440
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-005 Nylon Conveyor Belt 650mm",
+          "confidence": 0.89
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-03-degraded": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-03-degraded",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-03-degraded.png",
+    "latency_ms": 1141.83,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO.2026-003",
+        "normalized": "SYN-PO-2026-003",
+        "confidence": 0.12,
+        "provenance": [
+          821,
+          287,
+          955,
+          301
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "No",
+        "normalized": "NO",
+        "confidence": 0.85,
+        "provenance": null
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.68,
+        "provenance": [
+          230,
+          322,
+          312,
+          336
+        ]
+      },
+      "supplier": {
+        "raw": "PT Sinar Presisi Logam",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-005",
+          "normalized": "SYN-MAT-005",
+          "confidence": 0.18,
+          "provenance": [
+            136,
+            435,
+            249,
+            462
+          ]
+        },
+        "quantity": {
+          "raw": "50",
+          "normalized": 50.0,
+          "confidence": 0.171,
+          "provenance": [
+            136,
+            435,
+            249,
+            462
+          ]
+        },
+        "uom": {
+          "raw": "M",
+          "normalized": "M",
+          "confidence": 0.171,
+          "provenance": [
+            136,
+            435,
+            249,
+            462
+          ]
+        },
+        "description": {
+          "raw": "1 'SYN-MAT-005 Nylon Conveyor Belt 650mm EP-400 3-Ply 50 M",
+          "confidence": 0.18
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-03-annotated": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-03-annotated",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-03-annotated.png",
+    "latency_ms": 1305.01,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-003",
+        "normalized": "SYN-PO-2026-003",
+        "confidence": 0.36,
+        "provenance": [
+          821,
+          288,
+          954,
+          300
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-003",
+        "normalized": "SJ-2026-003",
+        "confidence": 0.58,
+        "provenance": [
+          231,
+          288,
+          321,
+          300
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.72,
+        "provenance": [
+          230,
+          323,
+          311,
+          335
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-01",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-005",
+          "normalized": "SYN-MAT-005",
+          "confidence": 0.92,
+          "provenance": [
+            141,
+            436,
+            246,
+            460
+          ]
+        },
+        "quantity": {
+          "raw": "400",
+          "normalized": 400.0,
+          "confidence": 0.874,
+          "provenance": [
+            141,
+            436,
+            246,
+            460
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.874,
+          "provenance": [
+            141,
+            436,
+            246,
+            460
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-005 Nylon Conveyor Belt 650mm EP-400 3-Ply",
+          "confidence": 0.92
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-04-clean": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-04-clean",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-04-clean.png",
+    "latency_ms": 1310.96,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-004",
+        "normalized": "SYN-PO-2026-004",
+        "confidence": 0.91,
+        "provenance": [
+          308,
+          298,
+          442,
+          310
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-004",
+        "normalized": "SJ-2026-004",
+        "confidence": 0.91,
+        "provenance": [
+          228,
+          268,
+          320,
+          280
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          713,
+          268,
+          794,
+          280
+        ]
+      },
+      "supplier": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-006",
+          "normalized": "SYN-MAT-006",
+          "confidence": 0.91,
+          "provenance": [
+            141,
+            391,
+            245,
+            415
+          ]
+        },
+        "quantity": {
+          "raw": "006",
+          "normalized": 6.0,
+          "confidence": 0.864,
+          "provenance": [
+            141,
+            391,
+            245,
+            415
+          ]
+        },
+        "uom": {
+          "raw": "PC",
+          "normalized": "PC",
+          "confidence": 0.864,
+          "provenance": [
+            141,
+            391,
+            245,
+            415
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-006 Centrifugal Pump Impeller Cast Iron DN 10 PC",
+          "confidence": 0.91
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-04-skewed": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-04-skewed",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-04-skewed.png",
+    "latency_ms": 1324.19,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO.2026-004",
+        "normalized": "SYN-PO-2026-004",
+        "confidence": 0.54,
+        "provenance": [
+          336,
+          280,
+          470,
+          307
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-004",
+        "normalized": "SJ-2026-004",
+        "confidence": 0.42,
+        "provenance": [
+          257,
+          246,
+          349,
+          272
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.91,
+        "provenance": [
+          742,
+          273,
+          824,
+          289
+        ]
+      },
+      "supplier": {
+        "raw": "PT Nusantara Distribusi Mandiri",
+        "normalized": "SYN-SUP-03",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-006",
+          "normalized": "SYN-MAT-006",
+          "confidence": 0.91,
+          "provenance": [
+            164,
+            368,
+            269,
+            395
+          ]
+        },
+        "quantity": {
+          "raw": "006",
+          "normalized": 6.0,
+          "confidence": 0.864,
+          "provenance": [
+            164,
+            368,
+            269,
+            395
+          ]
+        },
+        "uom": {
+          "raw": "PC",
+          "normalized": "PC",
+          "confidence": 0.864,
+          "provenance": [
+            164,
+            368,
+            269,
+            395
+          ]
+        },
+        "description": {
+          "raw": ".4 SYN-MAT-006 Centrifugal Pump Impeller Cast Iron DN 10 PC |",
+          "confidence": 0.91
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-04-degraded": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-04-degraded",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-04-degraded.png",
+    "latency_ms": 1041.57,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-004",
+        "normalized": "SYN-PO-2026-004",
+        "confidence": 0.92,
+        "provenance": [
+          308,
+          298,
+          441,
+          310
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-004",
+        "normalized": "SJ-2026-004",
+        "confidence": 0.8,
+        "provenance": [
+          228,
+          268,
+          319,
+          280
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.95,
+        "provenance": [
+          714,
+          268,
+          794,
+          280
+        ]
+      },
+      "supplier": {
+        "raw": "PT Nusantara Distribusi Mandiri",
+        "normalized": "SYN-SUP-03",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-006",
+          "normalized": "SYN-MAT-006",
+          "confidence": 0.8,
+          "provenance": [
+            141,
+            388,
+            249,
+            416
+          ]
+        },
+        "quantity": {
+          "raw": "006",
+          "normalized": 6.0,
+          "confidence": 0.76,
+          "provenance": [
+            141,
+            388,
+            249,
+            416
+          ]
+        },
+        "uom": {
+          "raw": "PC",
+          "normalized": "PC",
+          "confidence": 0.76,
+          "provenance": [
+            141,
+            388,
+            249,
+            416
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-006 Centrifugal Pump impeller Cast iron DN 10 Pc",
+          "confidence": 0.8
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-04-annotated": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-04-annotated",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-04-annotated.png",
+    "latency_ms": 1263.13,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-004",
+        "normalized": "SYN-PO-2026-004",
+        "confidence": 0.91,
+        "provenance": [
+          308,
+          298,
+          442,
+          310
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-004",
+        "normalized": "SJ-2026-004",
+        "confidence": 0.91,
+        "provenance": [
+          228,
+          268,
+          320,
+          280
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          713,
+          268,
+          794,
+          280
+        ]
+      },
+      "supplier": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-006",
+          "normalized": "SYN-MAT-006",
+          "confidence": 0.91,
+          "provenance": [
+            141,
+            391,
+            245,
+            415
+          ]
+        },
+        "quantity": {
+          "raw": "006",
+          "normalized": 6.0,
+          "confidence": 0.864,
+          "provenance": [
+            141,
+            391,
+            245,
+            415
+          ]
+        },
+        "uom": {
+          "raw": "PC",
+          "normalized": "PC",
+          "confidence": 0.864,
+          "provenance": [
+            141,
+            391,
+            245,
+            415
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-006 Centrifugal Pump Impeller Cast Iron DN 10 PC",
+          "confidence": 0.91
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-05-clean": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-05-clean",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-05-clean.png",
+    "latency_ms": 1033.44,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-005",
+        "normalized": "SYN-PO-2026-005",
+        "confidence": 0.89,
+        "provenance": [
+          828,
+          173,
+          962,
+          185
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-005",
+        "normalized": "SJ-2026-005",
+        "confidence": 0.84,
+        "provenance": [
+          940,
+          113,
+          1032,
+          125
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.95,
+        "provenance": [
+          832,
+          143,
+          913,
+          155
+        ]
+      },
+      "supplier": {
+        "raw": "PT Delta Mandiri Teknik",
+        "normalized": "SYN-SUP-02",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-007",
+          "normalized": "SYN-MAT-007",
+          "confidence": 0.92,
+          "provenance": [
+            141,
+            280,
+            245,
+            292
+          ]
+        },
+        "quantity": {
+          "raw": "007",
+          "normalized": 7.0,
+          "confidence": 0.874,
+          "provenance": [
+            141,
+            280,
+            245,
+            292
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.874,
+          "provenance": [
+            141,
+            280,
+            245,
+            292
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-007",
+          "confidence": 0.92
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-05-skewed": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-05-skewed",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-05-skewed.png",
+    "latency_ms": 1184.72,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026.005",
+        "normalized": "SYN-PO-2026-005",
+        "confidence": 0.71,
+        "provenance": [
+          866,
+          182,
+          1000,
+          210
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-005",
+        "normalized": "SJ-2026-005",
+        "confidence": 0.42,
+        "provenance": [
+          977,
+          128,
+          1073,
+          156
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.89,
+        "provenance": [
+          876,
+          156,
+          954,
+          173
+        ]
+      },
+      "supplier": {
+        "raw": "PT Delta Mandiri Teknik",
+        "normalized": "SYN-SUP-02",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-007",
+          "normalized": "SYN-MAT-007",
+          "confidence": 0.81,
+          "provenance": [
+            174,
+            250,
+            279,
+            278
+          ]
+        },
+        "quantity": {
+          "raw": "65",
+          "normalized": 65.0,
+          "confidence": 0.769,
+          "provenance": [
+            174,
+            250,
+            279,
+            278
+          ]
+        },
+        "uom": {
+          "raw": "M",
+          "normalized": "M",
+          "confidence": 0.769,
+          "provenance": [
+            174,
+            250,
+            279,
+            278
+          ]
+        },
+        "description": {
+          "raw": "| 1 SYN-MAT-007 Stainless Stee! Seamless Pipe 2 inchs 65 M",
+          "confidence": 0.81
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-05-degraded": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-05-degraded",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-05-degraded.png",
+    "latency_ms": 1024.71,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-005",
+        "normalized": "SYN-PO-2026-005",
+        "confidence": 0.3,
+        "provenance": [
+          827,
+          172,
+          962,
+          186
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-005",
+        "normalized": "SJ-2026-005",
+        "confidence": 0.56,
+        "provenance": [
+          939,
+          112,
+          1032,
+          126
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          832,
+          142,
+          914,
+          156
+        ]
+      },
+      "supplier": {
+        "raw": "PT Delta Mandiri Teknik",
+        "normalized": "SYN-SUP-02",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-007",
+          "normalized": "SYN-MAT-007",
+          "confidence": 0.24,
+          "provenance": [
+            136,
+            274,
+            250,
+            303
+          ]
+        },
+        "quantity": {
+          "raw": "007",
+          "normalized": 7.0,
+          "confidence": 0.228,
+          "provenance": [
+            136,
+            274,
+            250,
+            303
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.228,
+          "provenance": [
+            136,
+            274,
+            250,
+            303
+          ]
+        },
+        "description": {
+          "raw": "1 \u2018SYN-MAT-007 Stainless Stee! Seamless Pipe 2 inch S",
+          "confidence": 0.24
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-05-annotated": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-05-annotated",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-05-annotated.png",
+    "latency_ms": 1102.7,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-005",
+        "normalized": "SYN-PO-2026-005",
+        "confidence": 0.89,
+        "provenance": [
+          828,
+          173,
+          962,
+          185
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-005",
+        "normalized": "SJ-2026-005",
+        "confidence": 0.84,
+        "provenance": [
+          940,
+          113,
+          1032,
+          125
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.95,
+        "provenance": [
+          832,
+          143,
+          913,
+          155
+        ]
+      },
+      "supplier": {
+        "raw": "PT Delta Mandiri Teknik",
+        "normalized": "SYN-SUP-02",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-007",
+          "normalized": "SYN-MAT-007",
+          "confidence": 0.92,
+          "provenance": [
+            141,
+            280,
+            245,
+            292
+          ]
+        },
+        "quantity": {
+          "raw": "007",
+          "normalized": 7.0,
+          "confidence": 0.874,
+          "provenance": [
+            141,
+            280,
+            245,
+            292
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.874,
+          "provenance": [
+            141,
+            280,
+            245,
+            292
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-007",
+          "confidence": 0.92
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-06-clean": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-06-clean",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-06-clean.png",
+    "latency_ms": 1151.98,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-006",
+        "normalized": "SYN-PO-2026-006",
+        "confidence": 0.92,
+        "provenance": [
+          813,
+          279,
+          946,
+          291
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "TANGGAL",
+        "normalized": "TANGGAL",
+        "confidence": 0.44,
+        "provenance": [
+          81,
+          279,
+          172,
+          291
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.68,
+        "provenance": [
+          446,
+          279,
+          527,
+          291
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-04",
+        "normalized": "SYN-SUP-04",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-003",
+          "normalized": "SYN-MAT-003",
+          "confidence": 0.77,
+          "provenance": [
+            141,
+            366,
+            245,
+            390
+          ]
+        },
+        "quantity": {
+          "raw": "003",
+          "normalized": 3.0,
+          "confidence": 0.731,
+          "provenance": [
+            141,
+            366,
+            245,
+            390
+          ]
+        },
+        "uom": {
+          "raw": "M",
+          "normalized": "M",
+          "confidence": 0.731,
+          "provenance": [
+            141,
+            366,
+            245,
+            390
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-003 Hydraulic Oil Tellus S2 M 46 (Drum 209",
+          "confidence": 0.77
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-06-skewed": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-06-skewed",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-06-skewed.png",
+    "latency_ms": 1285.99,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-006",
+        "normalized": "SYN-PO-2026-006",
+        "confidence": 0.83,
+        "provenance": [
+          781,
+          263,
+          915,
+          282
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "TANGGAL",
+        "normalized": "TANGGAL",
+        "confidence": 0.85,
+        "provenance": null
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.92,
+        "provenance": [
+          416,
+          285,
+          497,
+          301
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-04",
+        "normalized": "SYN-SUP-04",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-003",
+          "normalized": "SYN-MAT-003",
+          "confidence": 0.75,
+          "provenance": [
+            115,
+            386,
+            220,
+            414
+          ]
+        },
+        "quantity": {
+          "raw": "8",
+          "normalized": 8.0,
+          "confidence": 0.712,
+          "provenance": [
+            115,
+            386,
+            220,
+            414
+          ]
+        },
+        "uom": {
+          "raw": "DRUM",
+          "normalized": "DRUM",
+          "confidence": 0.712,
+          "provenance": [
+            115,
+            386,
+            220,
+            414
+          ]
+        },
+        "description": {
+          "raw": "| 1 SYN-MAT-003 Hydraulic Oil Tellus $2 M46 (Drum 209 8 DRUM |",
+          "confidence": 0.75
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-06-degraded": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-06-degraded",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-06-degraded.png",
+    "latency_ms": 967.51,
+    "header": {
+      "po_number": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.0,
+        "provenance": null
+      },
+      "delivery_note_number": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.0,
+        "provenance": null
+      },
+      "delivery_date": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.0,
+        "provenance": null
+      },
+      "supplier": {
+        "raw": "SYN-SUP-04",
+        "normalized": "SYN-SUP-04",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-003",
+          "normalized": "SYN-MAT-003",
+          "confidence": 0.29,
+          "provenance": [
+            136,
+            364,
+            251,
+            392
+          ]
+        },
+        "quantity": {
+          "raw": "8",
+          "normalized": 8.0,
+          "confidence": 0.275,
+          "provenance": [
+            136,
+            364,
+            251,
+            392
+          ]
+        },
+        "uom": {
+          "raw": "M",
+          "normalized": "M",
+          "confidence": 0.275,
+          "provenance": [
+            136,
+            364,
+            251,
+            392
+          ]
+        },
+        "description": {
+          "raw": "1 \u2018SYN-MAT-003 Hydraulic Oil Tellus S2 M 46 (Drum 209 8 DRUM",
+          "confidence": 0.29
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-06-annotated": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-06-annotated",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-06-annotated.png",
+    "latency_ms": 1181.42,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-006",
+        "normalized": "SYN-PO-2026-006",
+        "confidence": 0.92,
+        "provenance": [
+          813,
+          279,
+          946,
+          291
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "TANGGAL",
+        "normalized": "TANGGAL",
+        "confidence": 0.44,
+        "provenance": [
+          77,
+          275,
+          172,
+          299
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.68,
+        "provenance": [
+          446,
+          279,
+          527,
+          291
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-04",
+        "normalized": "SYN-SUP-04",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-003",
+          "normalized": "SYN-MAT-003",
+          "confidence": 0.77,
+          "provenance": [
+            141,
+            366,
+            245,
+            390
+          ]
+        },
+        "quantity": {
+          "raw": "8",
+          "normalized": 8.0,
+          "confidence": 0.731,
+          "provenance": [
+            141,
+            366,
+            245,
+            390
+          ]
+        },
+        "uom": {
+          "raw": "M",
+          "normalized": "M",
+          "confidence": 0.731,
+          "provenance": [
+            141,
+            366,
+            245,
+            390
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-003 Hydraulic Oil Tellus S2 M 46 (Drum 209 8 DRUM",
+          "confidence": 0.77
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-07-clean": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-07-clean",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-07-clean.png",
+    "latency_ms": 1165.65,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-007",
+        "normalized": "SYN-PO-2026-007",
+        "confidence": 0.44,
+        "provenance": [
+          821,
+          288,
+          954,
+          300
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-007",
+        "normalized": "SJ-2026-007",
+        "confidence": 0.43,
+        "provenance": [
+          231,
+          288,
+          321,
+          300
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.72,
+        "provenance": [
+          230,
+          323,
+          311,
+          335
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-01",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-001",
+          "normalized": "SYN-MAT-001",
+          "confidence": 0.88,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "quantity": {
+          "raw": "001",
+          "normalized": 1.0,
+          "confidence": 0.836,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.836,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-001 Hexagonal Bolt M12 x 50mm Gr 8.8",
+          "confidence": 0.88
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-07-skewed": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-07-skewed",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-07-skewed.png",
+    "latency_ms": 1470.16,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO.2026.007",
+        "normalized": "SYN-PO-2026-007",
+        "confidence": 0.65,
+        "provenance": [
+          853,
+          296,
+          987,
+          325
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-007",
+        "normalized": "SJ-2026-007",
+        "confidence": 0.77,
+        "provenance": [
+          264,
+          267,
+          355,
+          284
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.9,
+        "provenance": [
+          261,
+          302,
+          342,
+          319
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-01",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-001",
+          "normalized": "SYN-MAT-001",
+          "confidence": 0.33,
+          "provenance": [
+            165,
+            410,
+            268,
+            438
+          ]
+        },
+        "quantity": {
+          "raw": "001",
+          "normalized": 1.0,
+          "confidence": 0.314,
+          "provenance": [
+            165,
+            410,
+            268,
+            438
+          ]
+        },
+        "uom": {
+          "raw": "BOX",
+          "normalized": "BOX",
+          "confidence": 0.314,
+          "provenance": [
+            165,
+            410,
+            268,
+            438
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-001 Hexagonal Bolt M12 x 50mm Gr 8.8 10 BOX",
+          "confidence": 0.33
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-07-degraded": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-07-degraded",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-07-degraded.png",
+    "latency_ms": 1177.3,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-007",
+        "normalized": "SYN-PO-2026-007",
+        "confidence": 0.01,
+        "provenance": [
+          821,
+          287,
+          954,
+          301
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026.007",
+        "normalized": "SJ-2026-007",
+        "confidence": 0.29,
+        "provenance": [
+          231,
+          287,
+          321,
+          301
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.68,
+        "provenance": [
+          230,
+          322,
+          312,
+          336
+        ]
+      },
+      "supplier": {
+        "raw": "PT Sinar Presisi Logam",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-001",
+          "normalized": "SYN-MAT-001",
+          "confidence": 0.45,
+          "provenance": [
+            136,
+            435,
+            247,
+            462
+          ]
+        },
+        "quantity": {
+          "raw": "001",
+          "normalized": 1.0,
+          "confidence": 0.427,
+          "provenance": [
+            136,
+            435,
+            247,
+            462
+          ]
+        },
+        "uom": {
+          "raw": "BOX",
+          "normalized": "BOX",
+          "confidence": 0.427,
+          "provenance": [
+            136,
+            435,
+            247,
+            462
+          ]
+        },
+        "description": {
+          "raw": "1 \u2018SYN-MAT-001 Hexagonal Bolt M12 x 50mm Gr 8.8 10 BOX",
+          "confidence": 0.45
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-07-annotated": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-07-annotated",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-07-annotated.png",
+    "latency_ms": 1280.85,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-007",
+        "normalized": "SYN-PO-2026-007",
+        "confidence": 0.44,
+        "provenance": [
+          821,
+          288,
+          954,
+          300
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-007",
+        "normalized": "SJ-2026-007",
+        "confidence": 0.43,
+        "provenance": [
+          231,
+          288,
+          321,
+          300
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.72,
+        "provenance": [
+          230,
+          323,
+          311,
+          335
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-01",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-001",
+          "normalized": "SYN-MAT-001",
+          "confidence": 0.88,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "quantity": {
+          "raw": "001",
+          "normalized": 1.0,
+          "confidence": 0.836,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.836,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-001 Hexagonal Bolt M12 x 50mm Gr 8.8",
+          "confidence": 0.88
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-08-clean": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-08-clean",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-08-clean.png",
+    "latency_ms": 1181.11,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-008",
+        "normalized": "SYN-PO-2026-008",
+        "confidence": 0.9,
+        "provenance": [
+          308,
+          298,
+          441,
+          310
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-008",
+        "normalized": "SJ-2026-008",
+        "confidence": 0.9,
+        "provenance": [
+          228,
+          268,
+          319,
+          280
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          713,
+          268,
+          794,
+          280
+        ]
+      },
+      "supplier": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-004-A",
+          "normalized": "SYN-MAT-004-A",
+          "confidence": 0.91,
+          "provenance": [
+            141,
+            391,
+            262,
+            415
+          ]
+        },
+        "quantity": {
+          "raw": "25",
+          "normalized": 25.0,
+          "confidence": 0.864,
+          "provenance": [
+            141,
+            391,
+            262,
+            415
+          ]
+        },
+        "uom": {
+          "raw": "PC",
+          "normalized": "PC",
+          "confidence": 0.864,
+          "provenance": [
+            141,
+            391,
+            262,
+            415
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-004-A Deep Groove Ball Bearing 6205-2RS. 25 PC",
+          "confidence": 0.91
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-08-skewed": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-08-skewed",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-08-skewed.png",
+    "latency_ms": 1143.52,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-008",
+        "normalized": "SYN-PO-2026-008",
+        "confidence": 0.78,
+        "provenance": [
+          340,
+          278,
+          473,
+          306
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-008",
+        "normalized": "SJ-2026-008",
+        "confidence": 0.68,
+        "provenance": [
+          262,
+          247,
+          353,
+          264
+        ]
+      },
+      "delivery_date": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.0,
+        "provenance": null
+      },
+      "supplier": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-004-4",
+          "normalized": "SYN-MAT-004-4",
+          "confidence": 0.46,
+          "provenance": [
+            168,
+            369,
+            289,
+            388
+          ]
+        },
+        "quantity": {
+          "raw": "004",
+          "normalized": 4.0,
+          "confidence": 0.437,
+          "provenance": [
+            168,
+            369,
+            289,
+            388
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.437,
+          "provenance": [
+            168,
+            369,
+            289,
+            388
+          ]
+        },
+        "description": {
+          "raw": "(1 SYN-MAT-004-4",
+          "confidence": 0.46
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-08-degraded": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-08-degraded",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-08-degraded.png",
+    "latency_ms": 1078.66,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-008",
+        "normalized": "SYN-PO-2026-008",
+        "confidence": 0.91,
+        "provenance": [
+          308,
+          298,
+          441,
+          310
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-008",
+        "normalized": "SJ-2026-008",
+        "confidence": 0.82,
+        "provenance": [
+          228,
+          268,
+          319,
+          280
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          714,
+          268,
+          794,
+          280
+        ]
+      },
+      "supplier": {
+        "raw": "PT Nusantara Distribusi Mandiri",
+        "normalized": "SYN-SUP-03",
+        "confidence": 0.85
+      }
+    },
+    "line_items": []
+  },
+  "SYN-DOC-FAM-08-annotated": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-08-annotated",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-08-annotated.png",
+    "latency_ms": 1256.85,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-008",
+        "normalized": "SYN-PO-2026-008",
+        "confidence": 0.9,
+        "provenance": [
+          308,
+          298,
+          441,
+          310
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-008",
+        "normalized": "SJ-2026-008",
+        "confidence": 0.9,
+        "provenance": [
+          228,
+          268,
+          319,
+          280
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          713,
+          268,
+          794,
+          280
+        ]
+      },
+      "supplier": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-004-A",
+          "normalized": "SYN-MAT-004-A",
+          "confidence": 0.91,
+          "provenance": [
+            141,
+            391,
+            262,
+            415
+          ]
+        },
+        "quantity": {
+          "raw": "25",
+          "normalized": 25.0,
+          "confidence": 0.864,
+          "provenance": [
+            141,
+            391,
+            262,
+            415
+          ]
+        },
+        "uom": {
+          "raw": "PC",
+          "normalized": "PC",
+          "confidence": 0.864,
+          "provenance": [
+            141,
+            391,
+            262,
+            415
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-004-A Deep Groove Ball Bearing 6205-2RS. 25 PC",
+          "confidence": 0.91
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-09-clean": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-09-clean",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-09-clean.png",
+    "latency_ms": 1170.29,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-009",
+        "normalized": "SYN-PO-2026-009",
+        "confidence": 0.9,
+        "provenance": [
+          308,
+          298,
+          441,
+          310
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-009",
+        "normalized": "SJ-2026-009",
+        "confidence": 0.89,
+        "provenance": [
+          228,
+          268,
+          319,
+          280
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          713,
+          268,
+          794,
+          280
+        ]
+      },
+      "supplier": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-008",
+          "normalized": "SYN-MAT-008",
+          "confidence": 0.91,
+          "provenance": [
+            141,
+            391,
+            245,
+            415
+          ]
+        },
+        "quantity": {
+          "raw": "15",
+          "normalized": 15.0,
+          "confidence": 0.864,
+          "provenance": [
+            141,
+            391,
+            245,
+            415
+          ]
+        },
+        "uom": {
+          "raw": "PAIL",
+          "normalized": "PAIL",
+          "confidence": 0.864,
+          "provenance": [
+            141,
+            391,
+            245,
+            415
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-008 High Temp Grease Complex Lithium NLGI 15 PAIL",
+          "confidence": 0.91
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-09-skewed": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-09-skewed",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-09-skewed.png",
+    "latency_ms": 1306.78,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO.2026-009",
+        "normalized": "SYN-PO-2026-009",
+        "confidence": 0.87,
+        "provenance": [
+          336,
+          280,
+          469,
+          307
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "$J-2026-009",
+        "normalized": "SJ-2026-009",
+        "confidence": 0.85,
+        "provenance": null
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.91,
+        "provenance": [
+          742,
+          273,
+          824,
+          289
+        ]
+      },
+      "supplier": {
+        "raw": "PT Nusantara Distribusi Mandiri",
+        "normalized": "SYN-SUP-03",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-008",
+          "normalized": "SYN-MAT-008",
+          "confidence": 0.63,
+          "provenance": [
+            164,
+            368,
+            269,
+            396
+          ]
+        },
+        "quantity": {
+          "raw": "008",
+          "normalized": 8.0,
+          "confidence": 0.598,
+          "provenance": [
+            164,
+            368,
+            269,
+            396
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.598,
+          "provenance": [
+            164,
+            368,
+            269,
+            396
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-008 High Temp Grease Compl",
+          "confidence": 0.63
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-09-degraded": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-09-degraded",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-09-degraded.png",
+    "latency_ms": 1089.7,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-009",
+        "normalized": "SYN-PO-2026-009",
+        "confidence": 0.92,
+        "provenance": [
+          308,
+          298,
+          441,
+          310
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-009",
+        "normalized": "SJ-2026-009",
+        "confidence": 0.78,
+        "provenance": [
+          228,
+          268,
+          319,
+          280
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.95,
+        "provenance": [
+          714,
+          268,
+          794,
+          280
+        ]
+      },
+      "supplier": {
+        "raw": "PT Nusantara Distribusi Mandiri",
+        "normalized": "SYN-SUP-03",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-008",
+          "normalized": "SYN-MAT-008",
+          "confidence": 0.76,
+          "provenance": [
+            141,
+            388,
+            249,
+            416
+          ]
+        },
+        "quantity": {
+          "raw": "16",
+          "normalized": 16.0,
+          "confidence": 0.722,
+          "provenance": [
+            141,
+            388,
+            249,
+            416
+          ]
+        },
+        "uom": {
+          "raw": "PAIL",
+          "normalized": "PAIL",
+          "confidence": 0.722,
+          "provenance": [
+            141,
+            388,
+            249,
+            416
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-008 High Temp Grease Complex Lithium NLGI 16 PAIL",
+          "confidence": 0.76
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-09-annotated": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-09-annotated",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-09-annotated.png",
+    "latency_ms": 1407.09,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-009",
+        "normalized": "SYN-PO-2026-009",
+        "confidence": 0.9,
+        "provenance": [
+          308,
+          298,
+          441,
+          310
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-009",
+        "normalized": "SJ-2026-009",
+        "confidence": 0.89,
+        "provenance": [
+          228,
+          268,
+          319,
+          280
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          713,
+          268,
+          794,
+          280
+        ]
+      },
+      "supplier": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-008",
+          "normalized": "SYN-MAT-008",
+          "confidence": 0.91,
+          "provenance": [
+            141,
+            391,
+            245,
+            415
+          ]
+        },
+        "quantity": {
+          "raw": "15",
+          "normalized": 15.0,
+          "confidence": 0.864,
+          "provenance": [
+            141,
+            391,
+            245,
+            415
+          ]
+        },
+        "uom": {
+          "raw": "PAIL",
+          "normalized": "PAIL",
+          "confidence": 0.864,
+          "provenance": [
+            141,
+            391,
+            245,
+            415
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-008 High Temp Grease Complex Lithium NLGI 15 PAIL",
+          "confidence": 0.91
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-10-clean": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-10-clean",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-10-clean.png",
+    "latency_ms": 1148.31,
+    "header": {
+      "po_number": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.0,
+        "provenance": null
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-010",
+        "normalized": "SJ-2026-010",
+        "confidence": 0.82,
+        "provenance": [
+          940,
+          113,
+          1031,
+          125
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.95,
+        "provenance": [
+          832,
+          143,
+          913,
+          155
+        ]
+      },
+      "supplier": {
+        "raw": "PT Delta Mandiri Teknik",
+        "normalized": "SYN-SUP-02",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-010",
+          "normalized": "SYN-MAT-010",
+          "confidence": 0.89,
+          "provenance": [
+            141,
+            280,
+            245,
+            292
+          ]
+        },
+        "quantity": {
+          "raw": "010",
+          "normalized": 10.0,
+          "confidence": 0.845,
+          "provenance": [
+            141,
+            280,
+            245,
+            292
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.845,
+          "provenance": [
+            141,
+            280,
+            245,
+            292
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-010",
+          "confidence": 0.89
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-10-skewed": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-10-skewed",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-10-skewed.png",
+    "latency_ms": 1156.86,
+    "header": {
+      "po_number": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.0,
+        "provenance": null
+      },
+      "delivery_note_number": {
+        "raw": "$J-2026-010",
+        "normalized": "SJ-2026-010",
+        "confidence": 0.85,
+        "provenance": null
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.95,
+        "provenance": [
+          867,
+          154,
+          949,
+          170
+        ]
+      },
+      "supplier": {
+        "raw": "PT Delta Mandiri Teknik",
+        "normalized": "SYN-SUP-02",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-010",
+          "normalized": "SYN-MAT-010",
+          "confidence": 0.91,
+          "provenance": [
+            170,
+            257,
+            275,
+            274
+          ]
+        },
+        "quantity": {
+          "raw": "010",
+          "normalized": 10.0,
+          "confidence": 0.864,
+          "provenance": [
+            170,
+            257,
+            275,
+            274
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.864,
+          "provenance": [
+            170,
+            257,
+            275,
+            274
+          ]
+        },
+        "description": {
+          "raw": "| 1 SYN-MAT-010",
+          "confidence": 0.91
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-10-degraded": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-10-degraded",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-10-degraded.png",
+    "latency_ms": 1002.65,
+    "header": {
+      "po_number": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.0,
+        "provenance": null
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-010",
+        "normalized": "SJ-2026-010",
+        "confidence": 0.61,
+        "provenance": [
+          938,
+          108,
+          1036,
+          135
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          832,
+          142,
+          914,
+          156
+        ]
+      },
+      "supplier": {
+        "raw": "PT Delta Mandiri Teknik",
+        "normalized": "SYN-SUP-02",
+        "confidence": 0.85
+      }
+    },
+    "line_items": []
+  },
+  "SYN-DOC-FAM-10-annotated": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-10-annotated",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-10-annotated.png",
+    "latency_ms": 1138.04,
+    "header": {
+      "po_number": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.0,
+        "provenance": null
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-010",
+        "normalized": "SJ-2026-010",
+        "confidence": 0.56,
+        "provenance": [
+          940,
+          113,
+          1031,
+          125
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          832,
+          143,
+          913,
+          155
+        ]
+      },
+      "supplier": {
+        "raw": "PT Delta Mandiri Teknik",
+        "normalized": "SYN-SUP-02",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-010",
+          "normalized": "SYN-MAT-010",
+          "confidence": 0.89,
+          "provenance": [
+            141,
+            276,
+            245,
+            300
+          ]
+        },
+        "quantity": {
+          "raw": "20",
+          "normalized": 20.0,
+          "confidence": 0.845,
+          "provenance": [
+            141,
+            276,
+            245,
+            300
+          ]
+        },
+        "uom": {
+          "raw": "PC",
+          "normalized": "PC",
+          "confidence": 0.845,
+          "provenance": [
+            141,
+            276,
+            245,
+            300
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-010 Flexible Coupling Rubber Insert HRC 15 20 PC",
+          "confidence": 0.89
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-11-clean": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-11-clean",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-11-clean.png",
+    "latency_ms": 1182.18,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-011",
+        "normalized": "SYN-PO-2026-011",
+        "confidence": 0.19,
+        "provenance": [
+          821,
+          288,
+          952,
+          300
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-011",
+        "normalized": "SJ-2026-011",
+        "confidence": 0.4,
+        "provenance": [
+          231,
+          288,
+          319,
+          300
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.72,
+        "provenance": [
+          230,
+          323,
+          311,
+          335
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-01",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-001",
+          "normalized": "SYN-MAT-001",
+          "confidence": 0.88,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "quantity": {
+          "raw": "001",
+          "normalized": 1.0,
+          "confidence": 0.836,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.836,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-001 Hexagonal Bolt M12 x 50mm Gr 8.8",
+          "confidence": 0.88
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-11-skewed": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-11-skewed",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-11-skewed.png",
+    "latency_ms": 1330.53,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO.2026-011",
+        "normalized": "SYN-PO-2026-011",
+        "confidence": 0.87,
+        "provenance": [
+          849,
+          299,
+          981,
+          317
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-011",
+        "normalized": "SJ-2026-011",
+        "confidence": 0.48,
+        "provenance": [
+          259,
+          270,
+          348,
+          286
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.96,
+        "provenance": [
+          258,
+          305,
+          338,
+          321
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-01",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-001",
+          "normalized": "SYN-MAT-001",
+          "confidence": 0.91,
+          "provenance": [
+            162,
+            413,
+            265,
+            440
+          ]
+        },
+        "quantity": {
+          "raw": "50",
+          "normalized": 50.0,
+          "confidence": 0.864,
+          "provenance": [
+            162,
+            413,
+            265,
+            440
+          ]
+        },
+        "uom": {
+          "raw": "PC",
+          "normalized": "PC",
+          "confidence": 0.864,
+          "provenance": [
+            162,
+            413,
+            265,
+            440
+          ]
+        },
+        "description": {
+          "raw": "| 1 SYN-MAT-001 Hexagonal Bolt M12 x 50mm Gr 8.8 50 PC",
+          "confidence": 0.91
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-11-degraded": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-11-degraded",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-11-degraded.png",
+    "latency_ms": 1144.28,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-011",
+        "normalized": "SYN-PO-2026-011",
+        "confidence": 0.0,
+        "provenance": [
+          821,
+          287,
+          953,
+          301
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-011",
+        "normalized": "SJ-2026-011",
+        "confidence": 0.4,
+        "provenance": [
+          231,
+          287,
+          320,
+          301
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.76,
+        "provenance": [
+          230,
+          322,
+          312,
+          336
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-01",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-001",
+          "normalized": "SYN-MAT-001",
+          "confidence": 0.19,
+          "provenance": [
+            136,
+            434,
+            248,
+            462
+          ]
+        },
+        "quantity": {
+          "raw": "001",
+          "normalized": 1.0,
+          "confidence": 0.18,
+          "provenance": [
+            136,
+            434,
+            248,
+            462
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.18,
+          "provenance": [
+            136,
+            434,
+            248,
+            462
+          ]
+        },
+        "description": {
+          "raw": "1 \u2018SYN-MAT-001 Hexagonal Bolt M12 x 50mm Gr 8.8",
+          "confidence": 0.19
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-11-annotated": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-11-annotated",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-11-annotated.png",
+    "latency_ms": 1286.5,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-011",
+        "normalized": "SYN-PO-2026-011",
+        "confidence": 0.91,
+        "provenance": [
+          821,
+          288,
+          952,
+          300
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "SJ-2026-011",
+        "normalized": "SJ-2026-011",
+        "confidence": 0.4,
+        "provenance": [
+          231,
+          288,
+          319,
+          300
+        ]
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.72,
+        "provenance": [
+          230,
+          323,
+          311,
+          335
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-01",
+        "normalized": "SYN-SUP-01",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-001",
+          "normalized": "SYN-MAT-001",
+          "confidence": 0.88,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "quantity": {
+          "raw": "001",
+          "normalized": 1.0,
+          "confidence": 0.836,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "uom": {
+          "raw": null,
+          "normalized": null,
+          "confidence": 0.836,
+          "provenance": [
+            141,
+            436,
+            243,
+            460
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-001 Hexagonal Bolt M12 x 50mm Gr 8.8",
+          "confidence": 0.88
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-12-clean": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-12-clean",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-12-clean.png",
+    "latency_ms": 1162.59,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-012",
+        "normalized": "SYN-PO-2026-012",
+        "confidence": 0.92,
+        "provenance": [
+          813,
+          279,
+          946,
+          291
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "TANGGAL",
+        "normalized": "TANGGAL",
+        "confidence": 0.85,
+        "provenance": null
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.68,
+        "provenance": [
+          446,
+          279,
+          527,
+          291
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-04",
+        "normalized": "SYN-SUP-04",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-003",
+          "normalized": "SYN-MAT-003",
+          "confidence": 0.77,
+          "provenance": [
+            141,
+            366,
+            245,
+            390
+          ]
+        },
+        "quantity": {
+          "raw": "003",
+          "normalized": 3.0,
+          "confidence": 0.731,
+          "provenance": [
+            141,
+            366,
+            245,
+            390
+          ]
+        },
+        "uom": {
+          "raw": "M",
+          "normalized": "M",
+          "confidence": 0.731,
+          "provenance": [
+            141,
+            366,
+            245,
+            390
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-003 Hydraulic Oil Tellus S2 M 46 (Drum 209",
+          "confidence": 0.77
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-12-skewed": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-12-skewed",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-12-skewed.png",
+    "latency_ms": 1284.51,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-012",
+        "normalized": "SYN-PO-2026-012",
+        "confidence": 0.87,
+        "provenance": [
+          841,
+          284,
+          975,
+          315
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "TANGGAL",
+        "normalized": "TANGGAL",
+        "confidence": 0.85,
+        "provenance": null
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.87,
+        "provenance": [
+          475,
+          271,
+          556,
+          287
+        ]
+      },
+      "supplier": {
+        "raw": "PT Petro Kimia Energi Sintesis",
+        "normalized": "SYN-SUP-04",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-003",
+          "normalized": "SYN-MAT-003",
+          "confidence": 0.56,
+          "provenance": [
+            166,
+            341,
+            270,
+            372
+          ]
+        },
+        "quantity": {
+          "raw": "003",
+          "normalized": 3.0,
+          "confidence": 0.532,
+          "provenance": [
+            166,
+            341,
+            270,
+            372
+          ]
+        },
+        "uom": {
+          "raw": "DRUM",
+          "normalized": "DRUM",
+          "confidence": 0.532,
+          "provenance": [
+            166,
+            341,
+            270,
+            372
+          ]
+        },
+        "description": {
+          "raw": "4 SYN-MAT-003 Hydraulic Oil Tellus $2 M46 (Drum 209 10 DRUM |",
+          "confidence": 0.56
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-12-degraded": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-12-degraded",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-12-degraded.png",
+    "latency_ms": 948.26,
+    "header": {
+      "po_number": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.0,
+        "provenance": null
+      },
+      "delivery_note_number": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.0,
+        "provenance": null
+      },
+      "delivery_date": {
+        "raw": null,
+        "normalized": null,
+        "confidence": 0.0,
+        "provenance": null
+      },
+      "supplier": {
+        "raw": "SYN-SUP-04",
+        "normalized": "SYN-SUP-04",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-003",
+          "normalized": "SYN-MAT-003",
+          "confidence": 0.3,
+          "provenance": [
+            136,
+            364,
+            251,
+            392
+          ]
+        },
+        "quantity": {
+          "raw": "003",
+          "normalized": 3.0,
+          "confidence": 0.285,
+          "provenance": [
+            136,
+            364,
+            251,
+            392
+          ]
+        },
+        "uom": {
+          "raw": "M",
+          "normalized": "M",
+          "confidence": 0.285,
+          "provenance": [
+            136,
+            364,
+            251,
+            392
+          ]
+        },
+        "description": {
+          "raw": "1 \u2018SYN-MAT-003 Hydraulic Oil Tellus S2 M 46 (Drum 209 10 DRUM",
+          "confidence": 0.3
+        }
+      }
+    ]
+  },
+  "SYN-DOC-FAM-12-annotated": {
+    "provider": "offline_ocr",
+    "doc_id": "SYN-DOC-FAM-12-annotated",
+    "doc_path": "data/synthetic/documents/png/SYN-DOC-FAM-12-annotated.png",
+    "latency_ms": 1175.07,
+    "header": {
+      "po_number": {
+        "raw": "SYN-PO-2026-012",
+        "normalized": "SYN-PO-2026-012",
+        "confidence": 0.92,
+        "provenance": [
+          813,
+          279,
+          946,
+          291
+        ]
+      },
+      "delivery_note_number": {
+        "raw": "TANGGAL",
+        "normalized": "TANGGAL",
+        "confidence": 0.85,
+        "provenance": null
+      },
+      "delivery_date": {
+        "raw": "2026-10-02",
+        "normalized": "2026-10-02",
+        "confidence": 0.68,
+        "provenance": [
+          446,
+          279,
+          527,
+          291
+        ]
+      },
+      "supplier": {
+        "raw": "SYN-SUP-04",
+        "normalized": "SYN-SUP-04",
+        "confidence": 0.85
+      }
+    },
+    "line_items": [
+      {
+        "line_no": 1,
+        "material_code": {
+          "raw": "SYN-MAT-003",
+          "normalized": "SYN-MAT-003",
+          "confidence": 0.77,
+          "provenance": [
+            141,
+            366,
+            245,
+            390
+          ]
+        },
+        "quantity": {
+          "raw": "003",
+          "normalized": 3.0,
+          "confidence": 0.731,
+          "provenance": [
+            141,
+            366,
+            245,
+            390
+          ]
+        },
+        "uom": {
+          "raw": "M",
+          "normalized": "M",
+          "confidence": 0.731,
+          "provenance": [
+            141,
+            366,
+            245,
+            390
+          ]
+        },
+        "description": {
+          "raw": "1 SYN-MAT-003 Hydraulic Oil Tellus S2 M 46 (Drum 209 10 DRUM",
+          "confidence": 0.77
+        }
+      }
+    ]
+  }
+}
