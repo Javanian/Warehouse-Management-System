@@ -1,5 +1,3 @@
-# Production-like profile: Secure cookie required (HTTPS terminated in front of the app), structured JSON logs,
-# no demo seed unless explicitly requested.
 server:
   servlet:
     session:

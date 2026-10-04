@@ -12,6 +12,7 @@ import com.stockflow.inventory.MasterLookup;
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -40,6 +41,37 @@ public class PurchaseOrderService {
             BigDecimal outstandingQuantity) {}
 
     public record PoReceipt(long id, String documentNumber, String status, Instant postedAt, String postedBy) {}
+
+    public record PoLineStatus(
+            int lineNo,
+            long itemId,
+            long materialId,
+            String materialCode,
+            String materialName,
+            String uomCode,
+            BigDecimal orderedQuantity,
+            BigDecimal receivedQuantity,
+            BigDecimal outstandingQuantity,
+            String lineStatus,
+            boolean canReceive
+    ) {}
+
+    public record PoStatusReport(
+            long id,
+            String poNumber,
+            String status,
+            boolean receivable,
+            long supplierId,
+            String supplierCode,
+            String supplierName,
+            LocalDate poDate,
+            LocalDate expectedDate,
+            int itemCount,
+            BigDecimal totalOrdered,
+            BigDecimal totalReceived,
+            BigDecimal totalOutstanding,
+            List<PoLineStatus> lines
+    ) {}
 
     public record PoSummary(long id, String poNumber, long supplierId, String supplierCode, String supplierName,
             LocalDate poDate, LocalDate expectedDate, String status, int itemCount, BigDecimal outstandingLines,
@@ -244,6 +276,63 @@ public class PurchaseOrderService {
         d.put("reason", reason.trim());
         audit.record(a, "PO_CANCEL", "PURCHASE_ORDER", id, d);
         return get(id);
+    }
+
+    public PoStatusReport lookupByPoNumber(String poNumber) {
+        if (poNumber == null || poNumber.isBlank()) {
+            throw ApiException.badRequest("VALIDATION_ERROR", "PO number is required");
+        }
+        record PoHead(long id, String poNumber, String status, long supplierId, String supplierCode,
+                      String supplierName, LocalDate poDate, LocalDate expectedDate) {}
+
+        PoHead head = jdbc.sql("select p.id, p.po_number, p.status, p.supplier_id, s.code as supplier_code, "
+                + "s.name as supplier_name, p.po_date, p.expected_date "
+                + "from purchase_orders p join suppliers s on s.id = p.supplier_id "
+                + "where upper(p.po_number) = upper(:po)")
+                .param("po", poNumber.trim())
+                .query(PoHead.class)
+                .optional()
+                .orElseThrow(() -> ApiException.notFound("Purchase order " + poNumber));
+
+        record ItemRow(int lineNo, long id, long materialId, String code, String name, String uom,
+                       BigDecimal ordered, BigDecimal received) {}
+
+        List<ItemRow> items = jdbc.sql("select i.line_no, i.id, i.material_id, m.code, m.name, m.uom_code as uom, "
+                + "i.ordered_quantity as ordered, i.received_quantity as received "
+                + "from purchase_order_items i join materials m on m.id = i.material_id "
+                + "where i.purchase_order_id = :id order by i.line_no")
+                .param("id", head.id())
+                .query(ItemRow.class)
+                .list();
+
+        boolean isReceivable = RECEIVABLE.contains(head.status());
+        BigDecimal totOrd = BigDecimal.ZERO;
+        BigDecimal totRec = BigDecimal.ZERO;
+        List<PoLineStatus> lines = new ArrayList<>();
+
+        for (ItemRow r : items) {
+            BigDecimal out = r.ordered().subtract(r.received()).max(BigDecimal.ZERO);
+            totOrd = totOrd.add(r.ordered());
+            totRec = totRec.add(r.received());
+            String lStatus;
+            if (r.received().compareTo(BigDecimal.ZERO) == 0) {
+                lStatus = "OPEN";
+            } else if (r.received().compareTo(r.ordered()) < 0) {
+                lStatus = "PARTIAL";
+            } else if (r.received().compareTo(r.ordered()) == 0) {
+                lStatus = "COMPLETED";
+            } else {
+                lStatus = "OVER_RECEIVED";
+            }
+            boolean canReceiveLine = isReceivable && out.signum() > 0;
+            lines.add(new PoLineStatus(r.lineNo(), r.id(), r.materialId(), r.code(), r.name(), r.uom(),
+                    r.ordered(), r.received(), out, lStatus, canReceiveLine));
+        }
+
+        BigDecimal totOut = totOrd.subtract(totRec).max(BigDecimal.ZERO);
+        return new PoStatusReport(head.id(), head.poNumber(), head.status(), isReceivable, head.supplierId(),
+                head.supplierCode(), head.supplierName(), head.poDate(), head.expectedDate(), items.size(),
+                totOrd, totRec, totOut, lines);
     }
 
     @Transactional(propagation = Propagation.MANDATORY)

@@ -75,10 +75,23 @@ public class SecurityConfig {
                         "/api/stock-adjustments/*/reject").hasAnyRole("ADMIN", "SUPERVISOR")
                 .requestMatchers(HttpMethod.POST, "/api/goods-receipts", "/api/stock-issues", "/api/stock-transfers",
                         "/api/stock-adjustments").hasAnyRole("ADMIN", "SUPERVISOR", "OPERATOR")
+                .requestMatchers(HttpMethod.POST, "/api/agent/drafts/*/review", "/api/agent/drafts/*/mark-posted",
+                        "/api/agent/drafts/*/post-and-link",
+                        "/api/agent/showcase/drafts/*/review",
+                        "/api/agent/showcase/drafts/*/post-and-link").hasAnyRole("ADMIN", "SUPERVISOR", "OPERATOR")
+                .requestMatchers(HttpMethod.POST, "/api/agent/showcase/process").hasAnyRole("ADMIN", "SUPERVISOR", "OPERATOR")
+                .requestMatchers(HttpMethod.GET, "/api/agent/showcase/**").hasAnyRole("ADMIN", "SUPERVISOR", "OPERATOR", "VIEWER")
+                .requestMatchers(HttpMethod.POST, "/api/agent/drafts").hasAnyRole("ADMIN", "SUPERVISOR", "OPERATOR", "AGENT")
+                .requestMatchers(HttpMethod.GET, "/api/agent/tools/**").hasAnyRole("ADMIN", "SUPERVISOR", "OPERATOR", "AGENT")
+                .requestMatchers(HttpMethod.POST, "/api/data-quality/scan", "/api/data-quality/issues/*/resolve").hasAnyRole("ADMIN", "SUPERVISOR")
+                .requestMatchers(HttpMethod.GET, "/api/agent/runs", "/api/agent/runs/**").hasAnyRole("ADMIN", "SUPERVISOR", "AGENT")
+                .requestMatchers(HttpMethod.POST, "/api/agent/runs", "/api/agent/runs/**").hasAnyRole("ADMIN", "SUPERVISOR", "AGENT")
+                .requestMatchers(HttpMethod.GET, "/api/agent/drafts", "/api/agent/drafts/**").hasAnyRole("ADMIN", "SUPERVISOR", "OPERATOR", "AGENT")
                 .requestMatchers(HttpMethod.POST, "/api/auth/logout").authenticated()
                 .requestMatchers(HttpMethod.POST, "/api/**", "/api/*").denyAll()
                 .requestMatchers(HttpMethod.PUT, "/api/**").denyAll()
                 .requestMatchers(HttpMethod.DELETE, "/api/**").denyAll()
+                .requestMatchers(HttpMethod.GET, "/api/**").hasAnyRole("ADMIN", "SUPERVISOR", "OPERATOR", "VIEWER")
                 .requestMatchers("/api/**").authenticated()
                 .requestMatchers("/actuator/**").denyAll()
                 .anyRequest().permitAll())

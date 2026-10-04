@@ -9,6 +9,7 @@ import com.stockflow.common.Quantities;
 import com.stockflow.common.SqlFilter;
 import com.stockflow.common.TimeSource;
 import com.stockflow.identity.Actor;
+import com.stockflow.identity.Role;
 import com.stockflow.inventory.InventoryPostingService;
 import com.stockflow.inventory.MasterLookup;
 import java.math.BigDecimal;
@@ -66,6 +67,10 @@ public class AdjustmentService {
 
     @Transactional(propagation = Propagation.MANDATORY)
     public AdjustmentView request(Actor a, RequestInput in) {
+        if (a.role() == Role.AGENT) {
+            throw ApiException.forbidden("AGENT_CANNOT_MUTATE_STOCK",
+                    "Agent identity has draft-only permissions and cannot request adjustments");
+        }
         if (in.materialId() == null) {
             throw ApiException.field("materialId", "material is required");
         }
@@ -119,6 +124,10 @@ public class AdjustmentService {
     }
 
     private void guard(Actor a, Locked r) {
+        if (a.role() == Role.AGENT) {
+            throw ApiException.forbidden("AGENT_CANNOT_MUTATE_STOCK",
+                    "Agent identity has draft-only permissions and cannot decide adjustments");
+        }
         if (!r.status().equals("PENDING")) {
             throw ApiException.conflict("INVALID_STATE", r.documentNumber() + " is already " + r.status());
         }
@@ -136,11 +145,13 @@ public class AdjustmentService {
             throw ApiException.field("note", "max 500 characters");
         }
 
+        jdbc.sql("insert into inventory_balances (material_id, location_id, quantity) values (:m, :l, 0)"
+                        + " on conflict (material_id, location_id) do nothing")
+                .param("m", r.materialId()).param("l", r.locationId()).update();
         CountSnapshot cur = jdbc.sql("select quantity, version from inventory_balances where material_id = :m"
                         + " and location_id = :l for update")
-                .param("m", r.materialId()).param("l", r.locationId()).query(CountSnapshot.class).optional()
-                .orElse(new CountSnapshot(BigDecimal.ZERO, 0));
-        if (cur.version() != r.observedVersion()) {
+                .param("m", r.materialId()).param("l", r.locationId()).query(CountSnapshot.class).single();
+        if (cur.version() != r.observedVersion() || cur.quantity().compareTo(r.observedQuantity()) != 0) {
             throw ApiException.conflict("STALE_COUNT", "Stock at this bin changed after the count (observed "
                     + Quantities.fmt(r.observedQuantity()) + ", now " + Quantities.fmt(cur.quantity())
                     + "). Reject this request and recount.",

@@ -5,6 +5,7 @@ import com.stockflow.common.DocumentNumberService;
 import com.stockflow.common.Quantities;
 import com.stockflow.common.TimeSource;
 import com.stockflow.identity.Actor;
+import com.stockflow.identity.Role;
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -53,6 +54,10 @@ public class InventoryPostingService {
 
     @Transactional(propagation = Propagation.MANDATORY)
     public Posted post(Actor actor, Request req) {
+        if (actor.role() == Role.AGENT) {
+            throw ApiException.forbidden("AGENT_CANNOT_MUTATE_STOCK",
+                    "Agent identity has draft-only permissions and is strictly forbidden from mutating inventory");
+        }
         if (req.lines().isEmpty()) {
             throw ApiException.badRequest("VALIDATION_ERROR", "A movement needs at least one line");
         }

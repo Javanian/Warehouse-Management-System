@@ -1,4 +1,3 @@
-# Local profile: loopback HTTP only, therefore Secure cookie disabled (ADR-0003). Demo seed enabled.
 server:
   servlet:
     session:

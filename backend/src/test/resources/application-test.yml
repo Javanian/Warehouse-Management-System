@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: ${STOCKFLOW_TEST_DB_URL:jdbc:postgresql://127.0.0.1:55432/stockflow_test}
-    username: ${STOCKFLOW_TEST_DB_USER:stockflow}
+    username: ${STOCKFLOW_TEST_DB_USER:stockflow_test}
     password: ${STOCKFLOW_TEST_DB_PASSWORD:}
     hikari:
       maximum-pool-size: 30

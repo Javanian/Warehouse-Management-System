@@ -35,6 +35,25 @@ public class InventoryController {
     public record ReconciliationRow(long materialId, String materialCode, long locationId, String location,
             BigDecimal balance, BigDecimal ledgerSum) {}
 
+    public record LocationBalance(long locationId, String locationCode, String warehouseCode, BigDecimal quantity) {}
+
+    public record MaterialMovementSummary(String movementNumber, String movementType, String documentNumber,
+                                          Instant postedAt, LocalDate businessDate, BigDecimal quantityDelta) {}
+
+    public record MaterialStockSummary(
+            long materialId,
+            String materialCode,
+            String materialName,
+            String uomCode,
+            int uomScale,
+            boolean active,
+            BigDecimal minStock,
+            BigDecimal totalQuantity,
+            String stockStatus,
+            List<LocationBalance> balances,
+            List<MaterialMovementSummary> recentMovements
+    ) {}
+
     private static final Map<String, String> BAL_SORT = Map.of("material", "upper(m.code)", "location",
             "upper(w.code), upper(l.code)", "quantity", "b.quantity", "updatedAt", "b.updated_at");
     private static final Map<String, String> MOV_SORT = Map.of("postedAt", "mv.posted_at", "movementNumber",
@@ -117,6 +136,52 @@ public class InventoryController {
                         + " join warehouses w on w.id = l.warehouse_id"
                         + " where coalesce(b.quantity, 0) <> coalesce(s.total, 0) order by 2, 4")
                 .query(ReconciliationRow.class).list();
+    }
+
+    @Operation(summary = "Deterministic stock summary and location breakdown for a material")
+    @GetMapping("/inventory/stock-summary/{materialCode}")
+    public MaterialStockSummary stockSummary(@PathVariable String materialCode) {
+        record MatHead(long id, String code, String name, String uomCode, int uomScale, boolean active, BigDecimal minStock) {}
+        MatHead mat = jdbc.sql("select m.id, m.code, m.name, m.uom_code, u.scale as uom_scale, m.active, m.minimum_stock as min_stock "
+                + "from materials m join uoms u on u.code = m.uom_code where upper(m.code) = upper(:code)")
+                .param("code", materialCode.trim())
+                .query(MatHead.class)
+                .optional()
+                .orElseThrow(() -> com.stockflow.common.ApiException.notFound("Material " + materialCode));
+
+        List<LocationBalance> balances = jdbc.sql("select b.location_id, l.code as location_code, w.code as warehouse_code, b.quantity "
+                + "from inventory_balances b "
+                + "join storage_locations l on l.id = b.location_id "
+                + "join warehouses w on w.id = l.warehouse_id "
+                + "where b.material_id = :id and b.quantity > 0 "
+                + "order by w.code, l.code")
+                .param("id", mat.id())
+                .query(LocationBalance.class)
+                .list();
+
+        BigDecimal total = balances.stream()
+                .map(LocationBalance::quantity)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+
+        String status;
+        if (total.compareTo(BigDecimal.ZERO) == 0) {
+            status = "OUT_OF_STOCK";
+        } else if (mat.minStock() != null && total.compareTo(mat.minStock()) < 0) {
+            status = "LOW_STOCK";
+        } else {
+            status = "HEALTHY";
+        }
+
+        List<MaterialMovementSummary> movements = jdbc.sql("select mv.movement_number, mv.movement_type, "
+                + "mv.document_number, mv.posted_at, mv.business_date, e.quantity_delta "
+                + "from stock_movement_entries e join stock_movements mv on mv.id = e.movement_id "
+                + "where e.material_id = :id order by mv.posted_at desc, e.id desc limit 5")
+                .param("id", mat.id())
+                .query(MaterialMovementSummary.class)
+                .list();
+
+        return new MaterialStockSummary(mat.id(), mat.code(), mat.name(), mat.uomCode(), mat.uomScale(),
+                mat.active(), mat.minStock(), total, status, balances, movements);
     }
 
     @GetMapping("/inventory/materials/{materialId}/locations")

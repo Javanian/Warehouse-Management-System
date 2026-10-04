@@ -8,6 +8,7 @@ import com.stockflow.common.PageResponse;
 import com.stockflow.common.Quantities;
 import com.stockflow.common.SqlFilter;
 import com.stockflow.identity.Actor;
+import com.stockflow.identity.Role;
 import com.stockflow.inventory.InventoryPostingService;
 import com.stockflow.inventory.InventoryPostingService.Line;
 import com.stockflow.inventory.InventoryPostingService.Posted;
@@ -102,6 +103,10 @@ public class StockDocumentService {
 
     @Transactional(propagation = Propagation.MANDATORY)
     public DocView receive(Actor a, ReceiptInput in) {
+        if (a.role() == Role.AGENT) {
+            throw ApiException.forbidden("AGENT_CANNOT_MUTATE_STOCK",
+                    "Agent identity has draft-only permissions and is strictly forbidden from posting goods receipts");
+        }
         if (in.purchaseOrderId() == null) {
             throw ApiException.field("purchaseOrderId", "purchase order is required");
         }
@@ -193,6 +198,10 @@ public class StockDocumentService {
 
     @Transactional(propagation = Propagation.MANDATORY)
     public DocView issue(Actor a, IssueInput in) {
+        if (a.role() == Role.AGENT) {
+            throw ApiException.forbidden("AGENT_CANNOT_MUTATE_STOCK",
+                    "Agent identity has draft-only permissions and cannot mutate inventory documents");
+        }
         if (in.reasonCode() == null || !ISSUE_REASONS.contains(in.reasonCode())) {
             throw ApiException.field("reasonCode", "reason must be one of " + new java.util.TreeSet<>(ISSUE_REASONS));
         }
@@ -240,6 +249,10 @@ public class StockDocumentService {
 
     @Transactional(propagation = Propagation.MANDATORY)
     public DocView transfer(Actor a, TransferInput in) {
+        if (a.role() == Role.AGENT) {
+            throw ApiException.forbidden("AGENT_CANNOT_MUTATE_STOCK",
+                    "Agent identity has draft-only permissions and cannot mutate inventory documents");
+        }
         text(in.reference(), "reference", 60, false);
         text(in.notes(), "notes", 500, false);
         List<TransferLineInput> lines = lines(in.lines());
@@ -292,6 +305,10 @@ public class StockDocumentService {
 
     @Transactional(propagation = Propagation.MANDATORY)
     public DocView reverse(Actor a, DocType type, long id, ReversalInput in) {
+        if (a.role() == Role.AGENT) {
+            throw ApiException.forbidden("AGENT_CANNOT_MUTATE_STOCK",
+                    "Agent identity has draft-only permissions and cannot mutate inventory documents");
+        }
         String reason = in == null ? null : in.reason();
         if (reason == null || reason.isBlank() || reason.length() > 500) {
             throw ApiException.field("reason", "reversal reason is required (max 500 characters)");

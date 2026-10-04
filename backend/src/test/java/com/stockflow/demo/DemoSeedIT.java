@@ -18,7 +18,7 @@ class DemoSeedIT extends IntegrationTest {
 
     @Test
     void seedIsDeterministicReconciledAndRerunSafe() {
-        jdbc.execute("delete from demo_seed_runs");
+        jdbc.execute("delete from demo_seed_runs where seed_name = 'demo-v1'");
         long before = count("select count(*) from materials where demo");
         if (before == 0) {
             assertThat(seeder.seed()).isTrue();

@@ -26,10 +26,17 @@ public abstract class IntegrationTest {
     static class FlywayCleanConfig {
         @Bean
         FlywayMigrationStrategy cleanMigrate() {
-            return (Flyway flyway) -> {
-                flyway.clean();
-                flyway.migrate();
-            };
+            return GuardedClean::cleanAndMigrate;
+        }
+    }
+
+    public static final class GuardedClean {
+        private GuardedClean() {}
+
+        public static void cleanAndMigrate(Flyway flyway) {
+            TestDatabaseGuard.verify(flyway.getConfiguration().getDataSource());
+            flyway.clean();
+            flyway.migrate();
         }
     }
 }

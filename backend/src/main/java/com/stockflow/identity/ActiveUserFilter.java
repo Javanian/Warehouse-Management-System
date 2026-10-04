@@ -43,11 +43,15 @@ public class ActiveUserFilter extends OncePerRequestFilter {
                     s.invalidate();
                 }
                 SecurityContextHolder.clearContext();
-                response.setStatus(401);
-                response.setContentType(MediaType.APPLICATION_JSON_VALUE);
-                response.getWriter().write(json.write(GlobalExceptionHandler.body(HttpStatus.UNAUTHORIZED,
-                        "ACCOUNT_DISABLED", "Your account is disabled. Contact an administrator.",
-                        request.getRequestURI(), null, null)));
+                if (request.getRequestURI().startsWith("/api")) {
+                    response.setStatus(401);
+                    response.setContentType(MediaType.APPLICATION_JSON_VALUE);
+                    response.getWriter().write(json.write(GlobalExceptionHandler.body(HttpStatus.UNAUTHORIZED,
+                            "ACCOUNT_DISABLED", "Your account is disabled. Contact an administrator.",
+                            request.getRequestURI(), null, null)));
+                } else {
+                    response.sendRedirect("/login");
+                }
                 return;
             }
             String current = "ROLE_" + u.get().role().name();

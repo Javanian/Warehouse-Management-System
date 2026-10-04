@@ -51,6 +51,11 @@ public class PurchaseOrderController {
         return service.get(id);
     }
 
+    @GetMapping("/lookup/{poNumber}")
+    public PurchaseOrderService.PoStatusReport lookup(@PathVariable String poNumber) {
+        return service.lookupByPoNumber(poNumber);
+    }
+
     @PostMapping
     @PreAuthorize("hasAnyRole('ADMIN','SUPERVISOR')")
     public ResponseEntity<PoDetail> create(@RequestHeader(value = CommandExecutor.HEADER, required = false) String key,
