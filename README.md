@@ -2,6 +2,10 @@
 
 StockFlow is a warehouse management application built as a modular monolith. It provides inventory tracking, purchase order receipt management, immutable ledger posting, physical count adjustment workflows, and role-based access control.
 
+This is a portfolio demo in development. The current backend milestone adds restricted agent tools, draft review and receipt-link validation, append-only audit events, synthetic document evaluation, PO/material status queries, a master-data issue queue, and deterministic stock investigation. The document-intake UI and a verified one-command demo are still pending. Live model evaluation has not been run.
+
+The reviewed backend subset passed 75 tests locally on PostgreSQL; the synthetic-data and extraction-evaluator suite passed 21 tests. These results do not establish browser workflow completion or production readiness.
+
 ## Stack & Architecture
 
 - **Backend**: Java 21, Spring Boot MVC, Spring JDBC (`JdbcClient`), Flyway migrations, PostgreSQL 16.
@@ -45,6 +49,17 @@ StockFlow is a warehouse management application built as a modular monolith. It 
 - JDK 21+
 - Node.js 22+ and npm
 - PostgreSQL 16
+- Python 3.10+ with `tools/extraction-spike/requirements.txt` installed; Tesseract is required for fresh OCR runs.
+
+### Restricted agent database role
+
+The backend now requires a separate `stockflow_agent` PostgreSQL login. Provision it on a local demo database before starting the application; do not use the application owner credentials for this role. The existing Windows launcher does not yet provision this complete setup.
+
+As the local database administrator, create `stockflow_agent` with a password you choose and grant `CONNECT` on the demo database. Grant membership in `stockflow_agent` with admin option to the application migration owner so Flyway can assign the restricted table permissions. The agent must not receive membership in the application owner role. Migrations V5–V9 establish the object permissions.
+
+Set `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, and `AGENT_DB_PASSWORD` before running the Maven wrapper. Keep these values outside Git. Missing agent credentials intentionally prevent startup.
+
+For backend tests, use a separate database owned by `stockflow_test`, set its comment to `stockflow:disposable-test`, and set `STOCKFLOW_TEST_DB_URL`, `STOCKFLOW_TEST_DB_USER`, and `STOCKFLOW_TEST_DB_PASSWORD`. Tests clean this guarded disposable database. The CI workflow contains the corresponding role and database bootstrap.
 
 ### Starting PostgreSQL (Port: 55432)
 ```powershell
